@@ -1,0 +1,66 @@
+---
+layout: default
+title: Blogposts
+blogpost:
+ - title: Apples?! Really the best fruits?
+   description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+   category: Fruit
+   date: 24 May 2024
+   url: https://gmail.com
+ - title: Potatoes are the best
+   description: Unde, sint perferendis eligendi excepturi esse quibusdam tenetur, rerum hic molestias voluptas repellendus quis voluptates eveniet a ullam fuga rem laborum debitis!
+   category: Vegetables
+   date: 13 May 2024
+   url: https://google.com
+ - title: Sale
+   description: Exciting things happening!
+   category: Promo
+   date: 17 April 2024
+   url: https://instituteofcode.com
+ - title: What happened in Thailand?
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusantium cum delectus necessitatibus nam architecto fugit, et dolore laudantium ducimus placeat explicabo.
+   category: News
+   date: 22 December 2023
+   url: https://bbc.com
+---
+
+<section class="grid-spaceBetween padded bg-featured latest-news">
+      <!-- Jekyll Loop in Section   -->
+
+      {% for item in page.blogpost %}
+      <div class="col-3_xs-6 padded-1">
+        <div class="card grid">
+          <div class="bg-image col-12">
+            <span> {{item.category}} </span>  
+          </div> 
+          <div class="post-info col-12"> 
+            <p class="date">{{item.date}} </p> 
+            <h3> {{item.title}} </h3> 
+            <p> {{item.description}} </p> 
+            </div>
+            <div class="col-12-bottom">
+                <a href="{{item.url}}"> Find out more &nbsp; &#10141;</a>
+            </div>
+            
+          
+        </div>
+      </div> 
+      {% endfor %}
+
+  </section> 
+
+  <!-- ursprünglicher Code: 
+<div class="col-4_xs-8">
+        <div class="card">
+          <div class="bg-image">
+            <span> News </span>  
+          </div> 
+          <div class="post-info"> 
+            <p class="date"> 27 Jan 2023 </p> 
+            <h3> What happened in Thailand? </h3> 
+            <p> Lorem ipsum adfö eijsd elfs ldif e lisnd flsidfje flsid h ega c,xkc iwpd skdj. </p> 
+            <a href="#"> Find out more &nbsp; &#10141;</a>
+          </div>
+        </div>
+      </div> 
+-->

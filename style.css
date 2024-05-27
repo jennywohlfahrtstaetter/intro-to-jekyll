@@ -3,3 +3,100 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+header,
+footer {
+    padding: 5%;
+    background-color: pink;
+}
+section {
+    padding: 5%;
+    background-color: antiquewhite;
+}
+
+.card1 {
+    padding: 5%;
+    margin-right: 2rem;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Utility Classes */
+
+.padded   { padding: 5%;}
+.padded-1 { padding: 1rem;}
+
+.bg-featured { background-color: antiquewhite; }
+.bg-light {background-color: white; }
+
+.light-text { color: white; } 
+
+
+.bg-image {
+  background-color: lightblue;
+  background-image: url('https://source.unsplash.com/EPr4Lbco5Qc');
+  background-size: cover;
+  background-position:center;
+  padding: 0.5rem;
+  padding-bottom: 80%;
+  color: white;
+}
+
+/* Universal Styles */
+h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+p {
+  line-height: 1.2;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+a {
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.subtle {
+  opacity: 0.8;
+}
+
+
+/* Card Styles  */
+
+.bg-image span {
+  text-transform: uppercase; 
+  font-weight: 600;
+}
+
+.card {
+  background-color: white;
+  padding: 0;
+}
+
+.post-info {
+  padding: 1rem;
+  min-height: 40vh;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: rgb(90,90,90);
+}
+
+.card a {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

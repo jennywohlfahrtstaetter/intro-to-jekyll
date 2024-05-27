@@ -1,0 +1,27 @@
+---
+layout: default
+title: Fruit Page
+fruit:
+ - title: Apple
+   description: Best Fruit
+ - title: Banana
+   description: Worst Fruit
+ - title: Cucumber
+   description: Not even a Fruit
+---
+
+<section>
+    <h1>This shows only on the fruit page</h1>
+    <h2>This is liquid content. It is made to show you that you are currently on the {{ page.title }} </h2>
+</section>
+
+<section>
+
+    {% for item in page.fruit %}
+    <div class="card1">
+        <h2> {{item.title}} </h2>
+        <h3> {{item.description}} </h3>
+    </div>
+
+    {% endfor %}
+</section>
